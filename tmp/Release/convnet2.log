@@ -1,0 +1,111 @@
+﻿Build started 3/25/2015 10:13:27 PM.
+     1>Project "D:\cuda-convnet2\convnet2\convnet2.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DNUMPY_INTERFACE /DXMD_H /DWIN32 /DNDEBUG /D_CONSOLE /D_WINDLL /D_UNICODE /DUNICODE /IC:\Users\v-wushi\AppData\Local\Continuum\Anaconda\Lib\site-packages\numpy\core\include\numpy /ID:\Python27\Lib\site-packages\numpy\core\include\numpy /I../thirdparty/python /I../thirdparty/pthread_win32 /I../thirdparty /I../cudaconv3/include /I../cudaconvnet/include /I../thirdparty/libjpeg /I../make-data/pyext/include /I../nvmatrix/include /I../util/include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I. /FIcuda_runtime.h /c D:\cuda-convnet2\cudaconvnet\src\layer.cu 
+       CudaBuild:
+         Compiling CUDA source file ..\cudaconvnet\src\layer.cu...
+         cmd.exe /C "C:\Users\v-wushi\AppData\Local\Temp\tmp24566cfeb2a247069a3f374cbad81186.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64"  -I"C:\Users\v-wushi\AppData\Local\Continuum\Anaconda\Lib\site-packages\numpy\core\include\numpy" -I"D:\Python27\Lib\site-packages\numpy\core\include\numpy" -I../thirdparty/python -I../thirdparty/pthread_win32 -I../thirdparty -I../cudaconv3/include -I../cudaconvnet/include -I../thirdparty/libjpeg -I"../make-data/pyext/include" -I../nvmatrix/include -I../util/include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DNUMPY_INTERFACE -DXMD_H -DWIN32 -DNDEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o ../tmp\Release\layer.cu.obj "D:\cuda-convnet2\cudaconvnet\src\layer.cu"
+         
+         D:\cuda-convnet2\convnet2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64"  -I"C:\Users\v-wushi\AppData\Local\Continuum\Anaconda\Lib\site-packages\numpy\core\include\numpy" -I"D:\Python27\Lib\site-packages\numpy\core\include\numpy" -I../thirdparty/python -I../thirdparty/pthread_win32 -I../thirdparty -I../cudaconv3/include -I../cudaconvnet/include -I../thirdparty/libjpeg -I"../make-data/pyext/include" -I../nvmatrix/include -I../util/include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DNUMPY_INTERFACE -DXMD_H -DWIN32 -DNDEBUG -D_CONSOLE -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o ../tmp\Release\layer.cu.obj "D:\cuda-convnet2\cudaconvnet\src\layer.cu" 
+     1>d:\cuda-convnet2\cudaconvnet\include\copypipeline.cuh(168): warning : function "IBroadcastNetwork::broadcast(std::map<int, NVMatrix *, std::less<int>, std::allocator<std::pair<const int, NVMatrix *>>> &)" is hidden by "ISafeBroadcastNetwork::broadcast" -- virtual function override intended?
+     1>d:\cuda-convnet2\cudaconvnet\include\layer.cuh(425): warning : overloaded function "Layer::fprop" is hidden by "DataLayer::fprop" -- virtual function override intended?
+     1>d:\cuda-convnet2\cudaconvnet\include\layer.cuh(410): warning : overloaded virtual function "Layer::getActs" is only partially overridden in class "DataLayer"
+     1>d:\cuda-convnet2\cudaconvnet\include\layer.cuh(410): warning : overloaded virtual function "Layer::isGradProducer" is only partially overridden in class "DataLayer"
+     1>d:\cuda-convnet2\cudaconvnet\include\layer.cuh(705): warning : overloaded virtual function "Layer::bprop" is only partially overridden in class "CostLayer"
+     1>d:\cuda-convnet2\cudaconvnet\include\layer.cuh(705): warning : overloaded virtual function "Layer::fprop" is only partially overridden in class "CostLayer"
+     1>d:\cuda-convnet2\cudaconvnet\include\layer.cuh(705): warning : overloaded virtual function "Layer::isGradProducer" is only partially overridden in class "CostLayer"
+     1>d:\cuda-convnet2\cudaconvnet\include\copypipeline.cuh(168): warning : function "IBroadcastNetwork::broadcast(std::map<int, NVMatrix *, std::less<int>, std::allocator<std::pair<const int, NVMatrix *>>> &)" is hidden by "ISafeBroadcastNetwork::broadcast" -- virtual function override intended?
+     1>d:\cuda-convnet2\cudaconvnet\include\layer.cuh(425): warning : overloaded function "Layer::fprop" is hidden by "DataLayer::fprop" -- virtual function override intended?
+     1>d:\cuda-convnet2\cudaconvnet\include\layer.cuh(410): warning : overloaded virtual function "Layer::getActs" is only partially overridden in class "DataLayer"
+     1>d:\cuda-convnet2\cudaconvnet\include\layer.cuh(410): warning : overloaded virtual function "Layer::isGradProducer" is only partially overridden in class "DataLayer"
+     1>d:\cuda-convnet2\cudaconvnet\include\layer.cuh(705): warning : overloaded virtual function "Layer::bprop" is only partially overridden in class "CostLayer"
+     1>d:\cuda-convnet2\cudaconvnet\include\layer.cuh(705): warning : overloaded virtual function "Layer::fprop" is only partially overridden in class "CostLayer"
+     1>d:\cuda-convnet2\cudaconvnet\include\layer.cuh(705): warning : overloaded virtual function "Layer::isGradProducer" is only partially overridden in class "CostLayer"
+         layer.cu
+     1>c:\users\v-wushi\appdata\local\continuum\anaconda\lib\site-packages\numpy\core\include\numpy\npy_1_7_deprecated_api.h(12): warning Msg: Using deprecated NumPy API, disable it by #defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
+     1>d:\cuda-convnet2\cudaconvnet\include\data.cuh(61): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>d:\cuda-convnet2\cudaconvnet\include\data.cuh(77): warning C4244: 'return' : conversion from 'int64' to 'int', possible loss of data
+     1>d:\cuda-convnet2\cudaconvnet\include\pipedispenser.cuh(95): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(58): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(364): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(575): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(599): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(771): warning C4305: '=' : truncation from 'double' to 'float'
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(772): warning C4305: '=' : truncation from 'double' to 'float'
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(820): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(821): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(871): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(873): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(873): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(912): warning C4305: '=' : truncation from 'double' to 'float'
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(913): warning C4305: '=' : truncation from 'double' to 'float'
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(1062): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(1132): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(1321): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(1331): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(1389): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(1646): warning C4244: 'argument' : conversion from 'int64' to 'int', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(1790): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(1818): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(1969): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(2014): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(2160): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(2300): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(2397): warning C4305: '=' : truncation from 'double' to 'float'
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(2398): warning C4305: '=' : truncation from 'double' to 'float'
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(2429): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>D:/cuda-convnet2/cudaconvnet/src/layer.cu(2430): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"../bin\_ConvNet.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\v-wushi\AppData\Local\Continuum\Anaconda\Lib\site-packages\numpy\core\lib" /LIBPATH:"D:\Python27\Lib\site-packages\numpy\core\lib" /LIBPATH:../thirdparty/lib /LIBPATH:../bin /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\x64" Dbghelp.lib cuda.lib cudart.lib cublas.lib curand.lib pthreadVC2_x64.lib libjpeg.lib cblas64.lib opencv_core249.lib opencv_imgproc249.lib opencv_highgui249.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"../bin\_ConvNet.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../bin\_ConvNet.lib" /MACHINE:X64 /DLL ../tmp\Release\conv_util.cu.obj
+         ../tmp\Release\filter_acts.cu.obj
+         ../tmp\Release\img_acts.cu.obj
+         ../tmp\Release\weight_acts.cu.obj
+         ../tmp\Release\actbroadcaster.cu.obj
+         ../tmp\Release\convnet.cu.obj
+         ../tmp\Release\copypipeline.cu.obj
+         ../tmp\Release\cost.cu.obj
+         ../tmp\Release\data.cu.obj
+         ../tmp\Release\gradreducer.cu.obj
+         ../tmp\Release\layer.cu.obj
+         ../tmp\Release\layer_kernels.cu.obj
+         ../tmp\Release\lr.cu.obj
+         ../tmp\Release\memorysource.cu.obj
+         ../tmp\Release\neuron.cu.obj
+         ../tmp\Release\pyconvnet.cu.obj
+         ../tmp\Release\reducepipeline.cu.obj
+         ../tmp\Release\streambroadcast.cu.obj
+         ../tmp\Release\util.cu.obj
+         ../tmp\Release\weights.cu.obj
+         ../tmp\Release\worker.cu.obj
+         ../tmp\Release\memory.cu.obj
+         ../tmp\Release\nvmatrix.cu.obj
+         ../tmp\Release\nvmatrix_kernels.cu.obj
+         ../tmp\Release\jpeg.obj
+         ../tmp\Release\pyext.obj
+         ../tmp\Release\matrix.obj
+         ../tmp\Release\main.obj
+            Creating library ../bin\_ConvNet.lib and object ../bin\_ConvNet.exp
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         Generating code
+         Finished generating code
+     1>libjpeg.lib(jcomapi.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcomapi.obj)' or at 'D:\cuda-convnet2\bin\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdapimin.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdapimin.obj)' or at 'D:\cuda-convnet2\bin\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdatasrc.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdatasrc.obj)' or at 'D:\cuda-convnet2\bin\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdinput.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdinput.obj)' or at 'D:\cuda-convnet2\bin\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdmarker.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdmarker.obj)' or at 'D:\cuda-convnet2\bin\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jerror.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jerror.obj)' or at 'D:\cuda-convnet2\bin\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jmemmgr.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jmemmgr.obj)' or at 'D:\cuda-convnet2\bin\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jmemnobs.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jmemnobs.obj)' or at 'D:\cuda-convnet2\bin\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jutils.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jutils.obj)' or at 'D:\cuda-convnet2\bin\vc110.pdb'; linking object as if no debug info
+     1>cblas64.lib(saxpy.obj) : warning LNK4099: PDB 'cblas.pdb' was not found with 'cblas64.lib(saxpy.obj)' or at 'D:\cuda-convnet2\bin\cblas.pdb'; linking object as if no debug info
+     1>cblas64.lib(sgemm.obj) : warning LNK4099: PDB 'cblas.pdb' was not found with 'cblas64.lib(sgemm.obj)' or at 'D:\cuda-convnet2\bin\cblas.pdb'; linking object as if no debug info
+     1>cblas64.lib(sscal.obj) : warning LNK4099: PDB 'cblas.pdb' was not found with 'cblas64.lib(sscal.obj)' or at 'D:\cuda-convnet2\bin\cblas.pdb'; linking object as if no debug info
+     1>cblas64.lib(xerbla.obj) : warning LNK4099: PDB 'cblas.pdb' was not found with 'cblas64.lib(xerbla.obj)' or at 'D:\cuda-convnet2\bin\cblas.pdb'; linking object as if no debug info
+         convnet2.vcxproj -> D:\cuda-convnet2\convnet2\../bin\_ConvNet.dll
+     1>Done Building Project "D:\cuda-convnet2\convnet2\convnet2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:24.64

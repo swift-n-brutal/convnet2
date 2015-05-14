@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cudaconv3">
+      <UniqueIdentifier>{16bde045-9af9-4e1f-b1be-fc765311b31a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cudaconvnet">
+      <UniqueIdentifier>{889fe58e-ed65-4e4c-b471-5aee86f19112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="make-data">
+      <UniqueIdentifier>{fe0a1e86-cdd3-430a-a44a-4f3a1c3ef5f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nvmatrix">
+      <UniqueIdentifier>{6cc7539c-bed5-48c5-b5ba-9193f3848927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{1f0a6fa9-9242-4067-a4f4-69ea92d0af11}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\cudaconvnet\src\jpeg.cpp">
+      <Filter>cudaconvnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\src\matrix.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\make-data\pyext\src\pyext.cpp">
+      <Filter>make-data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\cudaconv3\src\conv_util.cu">
+      <Filter>cudaconv3</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconv3\src\filter_acts.cu">
+      <Filter>cudaconv3</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconv3\src\img_acts.cu">
+      <Filter>cudaconv3</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconv3\src\weight_acts.cu">
+      <Filter>cudaconv3</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\actbroadcaster.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\convnet.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\copypipeline.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\cost.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\data.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\gradreducer.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\layer.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\layer_kernels.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\lr.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\memorysource.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\neuron.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\pyconvnet.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\reducepipeline.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\streambroadcast.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\util.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\weights.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaconvnet\src\worker.cu">
+      <Filter>cudaconvnet</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\nvmatrix\src\memory.cu">
+      <Filter>nvmatrix</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\nvmatrix\src\nvmatrix.cu">
+      <Filter>nvmatrix</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\nvmatrix\src\nvmatrix_kernels.cu">
+      <Filter>nvmatrix</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cudaconv3\include\conv_util.cuh">
+      <Filter>cudaconv3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconv3\include\cudaconv2.cuh">
+      <Filter>cudaconv3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\actbroadcaster.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\convnet.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\copypipeline.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\cost.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\data.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\gradreducer.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\jpeg.h">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\layer.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\layer_kernels.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\lr.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\memorysource.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\messages.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\neuron.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\pipedispenser.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\pyconvnet.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\reducepipeline.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\streambroadcast.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\timer.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\util.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\weights.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaconvnet\include\worker.cuh">
+      <Filter>cudaconvnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\make-data\pyext\include\pyext.h">
+      <Filter>make-data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nvmatrix\include\memory.cuh">
+      <Filter>nvmatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nvmatrix\include\nvmatrix.cuh">
+      <Filter>nvmatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nvmatrix\include\nvmatrix_kernels.cuh">
+      <Filter>nvmatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nvmatrix\include\nvmatrix_operators.cuh">
+      <Filter>nvmatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\include\matrix.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\include\matrix_funcs.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\include\queue.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\include\sync.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\include\thread.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
